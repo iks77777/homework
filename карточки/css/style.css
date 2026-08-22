@@ -1,0 +1,44 @@
+html {
+    font-family: sans-serif;
+}
+
+body * {
+    block-size: border-box;
+}
+
+.flex-container{
+display: flex; 
+justify-content: space-between  ;
+flex-direction: row;
+  flex-wrap: wrap;
+border-bottom: 1px solid #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;      
+  align-items: center;     
+  gap: 16px; 
+}
+
+
+.title {
+color: black;
+}
+.title-1 {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1220px;
+    align-items: center;
+    padding: 0 15px ;
+    margin: 0 auto;
+   height: 105px;
+}
