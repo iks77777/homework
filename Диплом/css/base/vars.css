@@ -1,0 +1,8 @@
+:root {
+    /* font-family */
+    --font-family: "Satoshi", sans-serif;
+
+/* container     */
+--container-width: 1440px;
+--container-padding: 15px;
+}
