@@ -1,0 +1,16 @@
+:root {
+    /* font-family */
+    --font-family: "Satoshi", sans-serif;
+
+/* container     */
+--container-width: 1240px;
+--container-padding: 15px;
+
+/* transition */
+--transition-time: 0.2s;
+
+/* layer */
+--layer-1: 1;
+--layer-2: 2;
+--layer-3: 3;
+}

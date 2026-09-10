@@ -1,0 +1,12 @@
+
+
+
+.sale__cap {
+font-weight: 400;    
+}
+
+@media (width <=768px) {
+.sale__cap {
+    display: none;
+}    
+}
