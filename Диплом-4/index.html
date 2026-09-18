@@ -1,0 +1,530 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./icons/shop-favicon-32x32.png"
+			type="image/x-png"
+		/>
+		<script defer src="./js/index.js" type="module"></script>
+		<title>SHOP.CO</title>
+	</head>
+	<body class="page__body">
+		<aside class="sale-registration">
+			<div class="container sale-registration__container">
+				<p class="sale-registration__descr">
+					Зарегистрируйтесь и получите скидку 20% на первую покупку.
+				</p>
+				<a class="sale-registration__link" href="#" id="registerLink"
+					>Зарегистрироваться сейчас</a
+				>
+				<button class="sale-registration__close">
+					<img
+						class="sale__cross"
+						src="./icons/logo-icon.svg"
+						width="13"
+						height="13"
+						alt="Крест"
+					/>
+				</button>
+			</div>
+		</aside>
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__left">
+					<button
+						class="header__burger burger"
+						aria-label="Открыть меню"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="24" height="24">
+							<use
+								class="burger__icon-menu"
+								href="./icons/sprite.svg#menu-burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icons/sprite.svg#menu-cross"
+							></use>
+						</svg>
+					</button>
+					<a class="text" href="#"></a>
+				</div>
+				<a class="text" href="#">
+					<img
+						src="./icons/SHOP.CO.svg"
+						alt="Название магазина"
+						width="160"
+						height="22"
+				/></a>
+				<nav
+					class="menu header__menu"
+					id="header__menu"
+					aria-label="Главное меню"
+				>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#shop" class="menu__link">Магазин</a>
+						</li>
+						<li class="menu__item">
+							<a href="#discounts" class="menu__link">Скидки</a>
+						</li>
+						<li class="menu__item">
+							<a href="#new arrivals" class="menu__link">Новые поступления</a>
+						</li>
+						<li class="menu__item">
+							<a href="#brands" class="menu__link">Бренды</a>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<label class="header__label">
+						<img
+							class="header__Frame"
+							src="./icons/Frame.svg"
+							width="24"
+							height="24"
+							alt="Лупа"
+						/>
+						<input
+							class="header__input"
+							type="text"
+							name="search"
+							placeholder="Искать товары…"
+						/>
+					</label>
+				</form>
+				<div class="header__actions">
+					<button class="header__actions-button">
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon-1"
+								href="./icons/sprite.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button class="header__actions-button">
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icons/sprite.svg#basket"
+							></use>
+						</svg>
+					</button>
+					<button class="header__actions-button">
+						<svg width="24" height="24">
+							<use
+								class="header__actions-icon"
+								href="./icons/sprite.svg#user"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container hero_container">
+					<div class="hero__inner">
+						<h1 class="hero__title">
+							НАЙДИ ОДЕЖДУ<br />
+							КОТОРАЯ ВЫРАЗИТ<br />
+							ТВОЙ СТИЛЬ
+						</h1>
+						<p class="hero__container-text">
+							Просмотрите наш набор тщательно сделанной одежды, созданный<br />
+							чтобы подчеркнуть ваш индивидуальный стиль.
+						</p>
+						<a class="hero__button" href="">Купить сейчас</a>
+
+						<div class="hero__list">
+							<ul class="hero__shop-info-list">
+								<li class="hero__shop-info-item">
+									<h3 class="text">200+</h3>
+									Всемирных брендов
+								</li>
+								<li class="hero__shop-info-item">
+									<h3 class="text">2,000+</h3>
+									Качественных товаров
+								</li>
+								<li class="hero__shop-info-item hero__item-center">
+									<h3 class="text">30,000+</h3>
+									Счастливых клиентов
+								</li>
+							</ul>
+						</div>
+						<picture class="hero__img">
+							<svg class="hero__icon-star" width="56" height="56">
+								<use
+									class="hero__icon-star"
+									href="./icons/sprite.svg#star"
+								></use>
+							</svg>
+							<svg class="hero__icon-star-big" width="104" height="104">
+								<use
+									class="hero__icon-star"
+									href="./icons/sprite.svg#star"
+								></use>
+							</svg>
+							<source srcset="./icons/woman-man-png.png" type="image/webr" />
+							<img
+								src="./icons/woman-man-png.png"
+								width="600"
+								height="803"
+								alt="Модная девушка и мужчина"
+							/>
+						</picture>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="brands">
+			<div class="container brands__featured-brands">
+				<img
+					src="./icons/versace-svg.svg"
+					width="166"
+					height="33"
+					alt="Бренд"
+				/>
+				<img src="./icons/zara-svg.svg" width="91" height="38" alt="Бренд" />
+				<img src="./icons/gucci-svg.svg" width="156" height="36" alt="Бренд" />
+				<img src="./icons/prada-svg.svg" width="194" height="32" alt="Бренд" />
+				<img
+					src="./icons/calvin-klein-svg.svg"
+					width="206"
+					height="33"
+					alt="Бренд"
+				/>
+			</div>
+		</section>
+		<section class="new">
+			<h2 class="new__heading">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+			<div class="container new__products">
+				<div class="new__svg-one">
+					<img
+						src="./icons/new__products/undershirt-png.png"
+						width="295"
+						height="298"
+						alt="Футболка"
+					/>
+					<p class="new__text">Футболка с лентой</p>
+					<img
+						class="new__stars"
+						src="./icons/stars-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<p class="new__first">₽5000</p>
+				</div>
+				<div class="new__svg-one">
+					<img
+						src="./icons/new__products/denim-png.png"
+						width="295"
+						height="298"
+						alt="Джинсы"
+					/>
+					<p class="new__text">Узкие джинсы</p>
+					<img
+						class="new__stars"
+						src="./icons/stars-second-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<ul class="new__shop-info-list">
+						<li class="new__first">₽5000</li>
+						<li class="new__second">₽6000</li>
+						<li>
+							<img
+								src="./icons/sale-svg.svg"
+								width="58"
+								height="28"
+								alt="Скидка"
+							/>
+						</li>
+					</ul>
+				</div>
+				<div class="new__svg-two">
+					<img
+						src="./icons/new__products/shirt-png.png"
+						width="295"
+						height="298"
+						alt="Рубашка"
+					/>
+					<p class="new__text">Клетчатая рубашка</p>
+					<img
+						class="new__stars"
+						src="./icons/stars-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<p class="new__first">₽7000</p>
+				</div>
+				<div class="new__svg-two">
+					<img
+						src="./icons/new__products/t-shirt-png.png"
+						width="295"
+						height="298"
+						alt="Рубашка"
+					/>
+					<p class="new__text">Клетчатая рубашка</p>
+					<img
+						class="new__stars"
+						src="./icons/stars-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<ul class="new__shop-info-list">
+						<li class="new__first">₽6000</li>
+						<li class="new__second">₽8000</li>
+						<li>
+							<img
+								src="./icons/sale-svg.svg"
+								width="58"
+								height="28"
+								alt="Скидка"
+							/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="new__products-button">
+				<a class="new__button" href="#">Посмотреть всё</a>
+			</div>
+			<hr class="light-divider" />
+		</section>
+		<section class="leaders">
+			<h2 class="leaders__sales">ЛИДЕРЫ ПРОДАЖ</h2>
+			<div class="container leaders__products">
+				<div class="leaders__svg-one">
+					<img
+						src="./icons/leaders__products/striped-shirt-png.png"
+						width="295"
+						height="298"
+						alt="Футболка"
+					/>
+					<p class="leaders__text">Рубашка в полоску</p>
+					<img
+						class="leaders__stars"
+						src="./icons/star-third-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<ul class="leaders__shop-info-list">
+						<li class="leaders__first">₽5000</li>
+						<li class="leaders__second">₽6000</li>
+						<li>
+							<img
+								src="./icons/sale-svg.svg"
+								width="58"
+								height="28"
+								alt="Скидка"
+							/>
+						</li>
+					</ul>
+				</div>
+				<div class="leaders__svg-one">
+					<img
+						src="./icons/leaders__products/courage-png.png"
+						width="295"
+						height="298"
+						alt="Джинсы"
+					/>
+					<p class="leaders__text">Футболка «Courage»</p>
+					<img
+						class="leaders__stars"
+						src="./icons/stars-fourth-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<p class="leaders__first">₽5000</p>
+				</div>
+				<div class="leaders__svg-two">
+					<img
+						src="./icons/leaders__products/bermuda-png.png"
+						width="295"
+						height="298"
+						alt="Рубашка"
+					/>
+					<p class="leaders__text">Свободные бермуды</p>
+					<img
+						class="leaders__stars"
+						src="./icons/stars-fifth-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<p class="leaders__first">₽4000</p>
+				</div>
+				<div class="leaders__svg-two">
+					<img
+						src="./icons/leaders__products/skinny-jeans-png.png"
+						width="295"
+						height="298"
+						alt="Рубашка"
+					/>
+					<p class="leaders__text">Потертые узкие джинсы</p>
+					<img
+						class="leaders__stars"
+						src="./icons/stars-svg.svg"
+						width="150"
+						height="19"
+						alt="Рейтинг"
+					/>
+					<p class="leaders__first">₽7000</p>
+				</div>
+			</div>
+			<div class="leaders__products-button">
+				<a class="leaders__button" href="#">Посмотреть всё</a>
+			</div>
+		</section>
+		<section class="choice">
+			<h2 class="choice__style">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+			<div class="container grid__container">
+				<div class="grid__item">
+					<div class="grid__wrapper">
+						<img
+							class="grid__image"
+							src="./icons/grid__item/img-first-png.png"
+							width="407"
+							height="289"
+							alt="Свободный мужчина"
+						/>
+						<span class="grid__title">Свободный</span>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="grid__wrapper">
+						<img
+							class="grid__image"
+							src="./icons/grid__item/img-second-png.png"
+							width="684"
+							height="289"
+							alt="Формальный мужчина"
+						/>
+						<span class="grid__title">Формальный</span>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="grid__wrapper">
+						<img
+							class="grid__image"
+							src="./icons/grid__item/img-third-png.png"
+							width="684"
+							height="289"
+							alt="Девушка"
+						/>
+						<span class="grid__title">Вечерний</span>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="grid__wrapper">
+						<img
+							class="grid__image"
+							src="./icons/grid__item/img-fourth-png.png"
+							width="407"
+							height="289"
+							alt="Мужчина с гантелей"
+						/>
+						<span class="grid__title">Спорт</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<h2 class="reviews__speak">ЧТО О НАС ГОВОРЯТ</h2>
+			<div class="reviews__arrows">
+				<svg width="24" height="24">
+					<use href="./icons/sprite.svg#left"></use>
+				</svg>
+				<svg width="24" height="24">
+					<use href="./icons/sprite.svg#right"></use>
+				</svg>
+			</div>
+			<div class="container reviews__container">
+				<div class="reviews__peoples-main">
+					<div class="reviews__peoples">
+						<img
+							src="./icons/stars-five-svg.svg"
+							width="138"
+							height="22"
+							alt="Звезды"
+						/>
+						<p class="reviews__text">
+							Виталий У.
+							<img
+								src="./icons/check-svg.svg"
+								width="24"
+								height="24"
+								alt="Галочка"
+							/>
+						</p>
+						<p class="reviews__text-second">
+							«Я в восторге от качества и стиля одежды, которую получил от
+							Shop.co. От повседневных вещей до элегантных платьев — каждая
+							покупка превзошла <br />
+							мои ожидания.»
+						</p>
+					</div>
+				</div>
+				<div class="reviews__peoples-main">
+					<div class="reviews__peoples">
+						<img
+							src="./icons/stars-five-svg.svg"
+							width="138"
+							height="22"
+							alt="Звезды"
+						/>
+						<p class="reviews__text">
+							Даниил В.
+							<img
+								src="./icons/check-svg.svg"
+								width="24"
+								height="24"
+								alt="Галочка"
+							/>
+						</p>
+						<p class="reviews__text-second">
+							«Раньше было трудно найти одежду под мой стиль, пока я не открыл
+							Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и
+							случаев.»
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="reviews__peoples">
+						<img
+							src="./icons/stars-five-svg.svg"
+							width="138"
+							height="22"
+							alt="Звезды"
+						/>
+						<p class="reviews__text">
+							Альберт Б.
+							<img
+								src="./icons/check-svg.svg"
+								width="24"
+								height="24"
+								alt="Галочка"
+							/>
+						</p>
+						<p class="reviews__text-second">
+							«Я всегда ищу уникальные модные вещи <br />
+							и был рад открыть для себя Shop.co. Их выбор одежды очень
+							разнообразен и полностью соответствует последним модным трендам.»
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
