@@ -1,0 +1,9 @@
+.sale-registration__descr {
+font-weight: 400;    
+}
+
+@media (width <=768px) {
+.sale-registration__descr {
+    display: none;
+}    
+}
