@@ -1,0 +1,23 @@
+.sale-registration__descr {
+font-weight: 400;    
+}
+
+@media (width <=768px) {
+.sale-registration__descr {
+    display: none;
+}    
+}
+
+.sale-registration__close{ 
+transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+.sale-registration__close:hover {
+color: var(--accent-color);
+} 
+}
+
+.sale__cross {
+stroke: currentColor;    
+}
