@@ -1,0 +1,18 @@
+.swiper-wrapper {
+  min-height: 240px;
+}
+
+.sizes__slider {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.sizes__slide-inner {
+  height: 100%;
+}
+
+
+

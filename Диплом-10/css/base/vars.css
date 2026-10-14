@@ -1,0 +1,29 @@
+:root {
+    /* font-family */
+    --font-family: "Satoshi", sans-serif;
+
+/* container     */
+--container-width: 1240px;
+--container-padding: 15px;
+
+/* transition */
+--transition-time: 0.7s;
+
+/* layer */
+--layer-negative: -1;
+--layer-1: 1;
+--layer-2: 2;
+--layer-3: 3;
+
+
+--bg-color: #f2f0f1;
+--bg-color2: #000;
+--accent-color: #c72121a6;
+--main-color: #9b9393;
+--overlay: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+
+
+/* transitions */
+--transition-time: 0,7s ;
+--transition-duration: 0.7s;  
+}
