@@ -1,0 +1,201 @@
+.hero { background: #f2f0f1; }
+
+.hero__inner {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.hero__content {
+  flex: 1 1 55%;
+  align-self: center;
+  padding-bottom: 40px;
+}
+
+.hero__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 57px;
+  line-height: 112%;
+  color: #000;
+  margin-bottom: 34px;
+  padding-top: 20px;
+}
+
+.hero__container-text {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 138%;
+color: rgba(0, 0, 0, 0.6);
+margin-bottom: 32px;
+}
+
+.hero__button { display: flex; }
+
+.hero__button-2 {
+  color: #f2f0f1;
+  border-radius: 62px;
+  border: 2px solid #000;
+  background: #000;
+  padding: 16px 54px;
+  cursor: pointer;
+  transition: color var(--transition-duration);
+  
+}
+@media (any-hover: hover) {
+  .hero__button-2:hover { color: var(--accent-color); }
+
+}
+
+.hero__list { margin-top: 48px; }
+
+.hero__shop-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 644px;
+}
+
+
+@media (width <= 1197px) {
+ .hero__shop-info-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+list-style: none;
+padding: 0;
+margin: 0;
+max-width: 344px;
+align-content: flex-start;
+flex-direction: row;
+gap: 15px;
+}
+ } 
+
+@media (width > 1100px) {
+.hero__shop-info-list {
+display: flex;
+flex-wrap: nowrap;
+list-style: none;
+padding: 0;
+margin: 0;
+max-width: 644px;
+flex-direction: row;
+}
+}
+.hero__shop-info-item {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: rgba(0, 0, 0, .6);
+}
+
+@media (width < 1100px) {
+.hero__shop-info-item  {
+border-right: none;
+} 
+}
+
+
+.hero__shop-info-item:last-child { border-right: none; }
+
+
+.hero__visual {
+  position: relative;
+  flex: 0 1 600px;
+  line-height: 0;
+}
+.hero__img { display: block; pointer-events: none; }
+.hero__img img { display: block; width: 100%; height: auto; }
+
+.hero__icon-star {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+}
+.hero__icon-star-big {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  width: 104px;
+  height: 104px;
+}
+
+
+@media (width <= 1280px) {
+  .hero__title { font-size: 48px;         padding: 40px 0 0 0; }
+  .hero__visual { flex-basis: 500px; }
+}
+
+@media (width <= 1050px) {
+  .hero__title { font-size: 35px; }
+}
+
+
+@media (width <= 768px) {
+  .hero__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .hero__content { padding: 0 16px 24px; }
+  .hero__title { font-size: 36px; line-height: 106%; padding-top: 37px; margin-bottom: 20px; }
+  .hero__container-text { margin-bottom: 24px; }
+  .hero__container-text br { display: none; }
+  .hero__button-2 { width: 100%; padding: 16px 0; }
+  .hero__list { margin-top: 32px; }
+  .hero__shop-info-list {
+    max-width: none;
+        row-gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+  }
+  .hero__shop-info-item:nth-child(1) { padding-right: 8px; }
+  
+  .hero__item-center {
+   
+    border-right: none;
+  }
+  .hero__shop-info-item:nth-child(2) { border-right: none; padding-right: 8px; }
+
+  .hero__visual {
+    flex: none;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .hero__icon-star { top: 45%; width: 44px; height: 44px; left: 4%; }
+  .hero__icon-star-big { top: 8%; right: 4%; width: 76px; height: 76px; }
+}
+
+
+@media (width <= 480px) {
+  .hero__title { font-size: 32px; }
+  .hero__shop-info-item { font-size: 12px; }
+  .hero__visual { max-width: 420px; }
+  .hero__icon-star { width: 36px; height: 36px; }
+  .hero__icon-star-big { width: 60px; height: 60px; }
+}
+
+
+@media (width <= 375px) {
+  .hero__content { padding: 0 12px 20px; }
+  .hero__title { font-size: 28px; padding-top: 28px; }
+  .hero__container-text { font-size: 14px; }
+  .hero__button-2 { padding: 14px 0; }
+  .hero__shop-info-item { font-size: 13px; padding: 0 4px; }
+  .hero__visual { max-width: 100%; }
+  .hero__icon-star { width: 30px; height: 30px; }
+  .hero__icon-star-big { width: 50px; height: 50px; }
+}
+
+
